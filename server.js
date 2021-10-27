@@ -4,6 +4,7 @@ const schema = require('./schema');
 const app = express();
 const cors = require('cors');
 app.use(cors());
+// Cấu hình liên kết HTTP tới GraphQL
 app.use(
   '/graphql',
   graphqlHTTP({
